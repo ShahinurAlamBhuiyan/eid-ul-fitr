@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Eid-Mubarak</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Eid-al-Fitr</a>
+    </header>
+    <section>
+        <img src="images/stars.png" id="stars">
+        <img src="images/stars2.png" id="stars2">
+        <img src="images/moon.png" id="moon">
+        <h2 id="text">Eid Mubarak</h2>
+        <img src="images/rock.png" id="rock">
+        <img src="images/masjid.png" id="masjid">
+        <img src="images/bottom.png" id="bottom">
+        <img src="images/lamp.png" id="lamp">
+    </section>
+
+    <div class="sec">
+        <h2>Happy eid mubarak to you and your family.</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cupiditate tempora recusandae totam eius deserunt quasi ea sed natus odit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque voluptatem vel aperiam debitis. Praesentium sint, rem itaque dolorem quidem dolore! <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cum iusto placeat unde quibusdam tempore odio quod fugit labore eum necessitatibus eligendi ut mollitia, quis eos minima pariatur consequuntur velit molestiae in quisquam? Accusamus, neque ipsa! Quam asperiores odit aspernatur, distinctio doloribus quaerat error autem dolorem veniam mollitia. Voluptatum, quae. <br> <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ratione nostrum omnis ullam deleniti officia cumque a mollitia, natus iste repellat rerum corporis earum molestiae animi nam, sequi aliquid. Commodi dolores autem veniam velit iusto. Explicabo ad a quo corrupti. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellendus enim odit officiis ab aut eveniet vitae, error ea qui natus fugit ut, sit est soluta placeat aperiam cum aspernatur quasi quo laboriosam laudantium. Minima dolor velit voluptates dolore unde. <br>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis cupiditate tempora recusandae totam eius deserunt quasi ea sed natus odit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque voluptatem vel aperiam debitis. Praesentium sint, rem itaque dolorem quidem dolore! <br><br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cum iusto placeat unde quibusdam tempore odio quod fugit labore eum necessitatibus eligendi ut mollitia, quis eos minima pariatur consequuntur velit molestiae in quisquam? Accusamus, neque ipsa! Quam asperiores odit aspernatur, distinctio doloribus quaerat error autem dolorem veniam mollitia. Voluptatum, quae. <br> <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ratione nostrum omnis ullam deleniti officia cumque a mollitia, natus iste repellat rerum corporis earum molestiae animi nam, sequi aliquid. Commodi dolores autem veniam velit iusto. Explicabo ad a quo corrupti. <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellendus enim odit officiis ab aut eveniet vitae, error ea qui natus fugit ut, sit est soluta placeat aperiam cum aspernatur quasi quo laboriosam laudantium. Minima dolor velit voluptates dolore unde.</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let stars2 = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let rock = document.getElementById('rock');
+        let masjid = document.getElementById('masjid');
+        let text = document.getElementById('text');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.bottom = value * 0.05 + '%';
+            stars2.style.bottom = value * 0.025 + '%';
+            moon.style.bottom = value * -0.5 + 'px';
+            rock.style.bottom = value * -0.75 + 'px';
+            masjid.style.bottom = value * -0.15 + 'px';
+            text.style.right = -100 + value * 0.5 + '%';
+            text.style.top = 50 + value * 0.1 + '%'
+
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
