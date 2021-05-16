@@ -1,5 +1,5 @@
 # eid-ul-fitr
-#### A website to wish eid Mubarak to all beautiful people on the internet.
+#### A website to wish " Eid Mubarak " to all beautiful people on the internet.
 ### [Live website](https://eid-ul-fitr.netlify.app/)
 
 ## Feautures
