@@ -91,6 +91,21 @@ section img#stars2{
     font-weight: 300;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 15px;
+    background: #96283a;
+    color: #fff;
+    white-space: nowrap;
+}
+
+footer a{
+    color: white;
+}
+
 @media (max-width: 992px) {
     #header{
         padding: 20px;
@@ -116,4 +131,4 @@ section img#stars2{
     #text{
         font-size: 15vw;
     }
-}
+} 
